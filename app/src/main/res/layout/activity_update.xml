@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_6"
     tools:context=".UpdateActivity">
 
-</android.support.constraint.ConstraintLayout>
+   <android.support.v7.widget.Toolbar
+       android:id="@+id/toolBar"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:background="?attr/colorPrimary"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:text="员工信息管理系统"/>
+   </android.support.v7.widget.Toolbar>
+
+ <EditText
+     android:id="@+id/text7"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:inputType="text"
+     android:hint="请输入姓名"/>
+
+    <EditText
+        android:id="@+id/text8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="请输入性别"/>
+
+    <EditText
+        android:id="@+id/text9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="请输入工号"/>
+
+    <EditText
+        android:id="@+id/text10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="请输入岗位"/>
+
+    <EditText
+        android:id="@+id/text11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="请输入学校"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BC8F8F"
+        android:text="更新数据"/>
+
+</LinearLayout>
